@@ -7,6 +7,7 @@ const updateNotifier = require('update-notifier');
 const pkg = require('./package.json');
 const weather = require('./');
 
+//The object to stock informations
 const cli = meow({
 	help: [
 		'Usage',
@@ -32,6 +33,7 @@ function _toCelcius(temp) {
 updateNotifier({ pkg}).notify();
 
 weather(cli.input, (err, result) => {
+	//error
 	if (err) {
 		console.log(chalk.bold.red(err));
 		process.exit(1);

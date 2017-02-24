@@ -18,7 +18,6 @@ module.exports = (opts, callback) => {
 		if (err) {
 			return callback(err);
 		}
-
 		callback(null, response);
 	});
 };
