@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
-const meow = require('meow');
-const chalk = require('chalk');
-const updateNotifier = require('update-notifier');
+
+const meow = require('meow');						// Using to easily parse information from web request
+const chalk = require('chalk');						// Using to color the text displayed
+const updateNotifier = require('update-notifier');	// Using to inform users of your package of updates
 const pkg = require('./package.json');
 const weather = require('./');
 
@@ -32,8 +33,9 @@ function _toCelcius(temp) {
 
 updateNotifier({ pkg}).notify();
 
+/* Inform on weither of the city */
 weather(cli.input, (err, result) => {
-	//error
+	
 	if (err) {
 		console.log(chalk.bold.red(err));
 		process.exit(1);
@@ -42,6 +44,7 @@ weather(cli.input, (err, result) => {
 	let condition = result.query.results.channel.item.condition.text;
 	let temperature;
 
+	/* Convert temperature depending on scale */
 	if (cli.input[2] && cli.input[2] === 'C') {
 		temperature = _toCelcius(result.query.results.channel.item.condition.temp) + 'C';
 	} else if (cli.input[2] && cli.input[2] === 'F') {
