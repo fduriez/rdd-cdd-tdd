@@ -12,11 +12,11 @@ The way used here is simple, you enter the name of a city and its country and th
 ===================
 # How to use it
 
-First, go to the root directory of the app with 'cd chemin/de/votre/app'
+First, go to the root directory of the app with `cd chemin/de/votre/app`
 
-Then, to install all the dependencies contained in the package.json enter 'npm install -a'
+Then, to install all the dependencies contained in the package.json enter `npm install -a`
 
-Then, to launch the app type the command below, you can specify the city and the country (for exemple Valence is also in France and Spain) 'node cli.js yourCity yourCountry' (By default the is Dhaka in Bangladesh)
+Then, to launch the app type the command below, you can specify the city and the country (for exemple Valence is also in France and Spain) `node cli.js yourCity yourCountry` (By default the is Dhaka in Bangladesh)
 
 ===================
 # Result 
