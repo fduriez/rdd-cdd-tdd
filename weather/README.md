@@ -2,14 +2,14 @@
 
 Got a question? Join us on stackoverflow at MonNomBidon
 
-===================
+---
 # Introduction 
 
 What's the weather like today? That's the question we try to answer with our app.
 
 The way used here is simple, you enter the name of a city and its country and the app make a request on Yahoo to find the weither in this city.
 
-===================
+---
 # How to use it
 
 First, go to the root directory of the app with `cd chemin/de/votre/app`
@@ -18,6 +18,6 @@ Then, to install all the dependencies contained in the package.json enter `npm i
 
 Then, to launch the app type the command below, you can specify the city and the country (for exemple Valence is also in France and Spain) `node cli.js yourCity yourCountry` (By default the is Dhaka in Bangladesh)
 
-===================
+---
 # Result 
 ![Alt text](Cli_Meteo_Launch.png?raw=true "Optional Title")
